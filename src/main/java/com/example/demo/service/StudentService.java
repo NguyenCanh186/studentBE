@@ -37,4 +37,9 @@ public class StudentService implements IStudentService {
     public Iterable<Point> getAllPointByIdStudent(Long id) {
         return studentRepo.getAllPointByIdStudent(id);
     }
+
+    @Override
+    public Student getStudentByName(String name) {
+        return studentRepo.getStudentByName(name);
+    }
 }
